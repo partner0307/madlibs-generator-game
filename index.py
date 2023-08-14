@@ -1,7 +1,7 @@
 from tkinter import *
 
 root = Tk()
-root.geometry('300X300')
+root.geometry('300x300')
 root.title('DataFlair-Mad Libs Generator')
 Label(root, text='Mad Libs Generator\n Have Fun!', font='arial 20 bold').pack()
 Label(root, text='Click Any One: ', font='arial 15 bold').place(x=40, y=80)
@@ -45,3 +45,8 @@ def madlib3():
     print('Today we picked apple from '+person+ "'s Orchard. I had no idea there were so many different varieties of apples. I ate " +color+ ' apples straight off the tree that tested like '+foods+ '. Then there was a '+adjective+ ' apple that looked like a ' + thing + '.When our bag were full, we went on a free hay ride to '+place+ ' and back. It ended at a hay pile where we got to ' +verb+ ' ' +adverb+ '. I can hardly wait to get home and cook with the apples. We are going to make appple '+food+ ' and '+things+' pies!.')
     
     
+Button(root, text='The Photographer', font='arial, 15', command=madlib1, bg='ghost white').place(x=60, y=120)
+Button(root, text='apple and apple', font='arial, 15', command=madlib3, bg='ghost white').place(x=70, y=180)
+Button(root, text='The Butterfly', font='arial 15', command=madlib2, bg='ghost white').place(x=80, y=240)
+
+root.mainloop()
